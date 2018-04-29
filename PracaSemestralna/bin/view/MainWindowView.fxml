@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainWindowController">
+   <children>
+      <Pane prefHeight="530.0" prefWidth="590.0" style="-fx-background-color: green;" AnchorPane.leftAnchor="0.0">
+         <children>
+            <Label layoutX="173.0" layoutY="215.0" text="User Name:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Label layoutX="173.0" layoutY="265.0" text="Password:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <TextField fx:id="txtUserName" layoutX="274.0" layoutY="213.0" promptText="Username" style="-fx-background-color: yellow;">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <TextField fx:id="txtPassword" layoutX="274.0" layoutY="260.0" promptText="Password" style="-fx-background-color: yellow;">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <Button fx:id="przycisk" layoutX="274.0" layoutY="309.0" mnemonicParsing="false" onAction="#ButtonClicked" text="Sign in">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <TextArea layoutX="55.0" layoutY="22.0" prefHeight="159.0" prefWidth="480.0" style="-fx-background-color: red;" text="Aplikacja ma na celu sprawdzenie spostrzegawczosci uzytkownika. Nalezy zaznaczyc pola, ktore sie powtarzaja. Prosze podac nazwe uzytkownika i haslo. Pole nalezy zmnienic klawiszem &quot;tab&quot;. W polach nalezy wpisac znak x. Po czym nacisnac przycisk nastepny." wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextArea>
+         </children>
+      </Pane>
+      <Pane prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

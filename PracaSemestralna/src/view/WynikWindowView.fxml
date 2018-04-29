@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="519.0" prefWidth="552.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.WynikWindowController">
+   <children>
+      <Pane layoutX="-1.0" layoutY="14.0" prefHeight="526.0" prefWidth="552.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TableView fx:id="tableView" nodeOrientation="LEFT_TO_RIGHT" prefHeight="519.0" prefWidth="552.0">
+              <columns>
+                <TableColumn fx:id="rankingColumn" prefWidth="95.0" text="Nr w rankingu" />
+                <TableColumn fx:id="nickColumn" prefWidth="55.0" text="Nick" />
+                  <TableColumn fx:id="wynikColumn" prefWidth="75.0" text="Wynik" />
+                  <TableColumn fx:id="liczbaTestowColumn" prefWidth="97.0" text="N_liczba testow" />
+                  <TableColumn fx:id="timeColumn" prefWidth="75.0" text="Czas" />
+                  <TableColumn fx:id="bledyColumn" prefWidth="75.0" text="Ilosc bledow" />
+                  <TableColumn fx:id="dataTestuColumn" prefWidth="75.0" text="Data testu" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
